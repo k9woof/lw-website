@@ -1,4 +1,4 @@
-# lw-website
+# Laura White Portfolio Website
 
 Portfolio style website for Laura White.
 
