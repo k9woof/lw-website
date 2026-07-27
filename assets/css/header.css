@@ -1,0 +1,38 @@
+header {
+  padding: 1rem;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  margin: 0 auto;
+  max-width: 1650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0.5rem;
+  display: flex;
+  font-size: 4.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li {
+  font-size: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #2b2320;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
