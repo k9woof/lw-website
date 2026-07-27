@@ -1,19 +1,22 @@
 header {
-  padding: 1rem;
-  margin: 0;
-  padding-bottom: 2rem;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
 }
 
 .navbar {
   margin: 0 auto;
-  max-width: 1650px;
+  max-width: 1800px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem;
+  padding-bottom: 1rem;
 }
 
 header h1 {
-  margin: 0.5rem;
+  margin: 0;
   display: flex;
   font-size: 4.5rem;
 }

@@ -31,6 +31,7 @@
 
 html {
   height: 100%;
+  background-color: #fff;
 }
 
 body {
@@ -46,14 +47,15 @@ body {
 main {
   flex: 1 0 auto;
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1800px;
 }
 
 .photo-grid {
   --frame: 2rem;
-  columns: 30rem 3;
+  columns: 3;
   margin-inline: auto;
   padding: var(--frame, 0.5rem);
+  padding-top: 0;
   column-gap: var(--frame, 0.5rem);
   list-style: none;
   .grid-image {
