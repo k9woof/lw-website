@@ -14,7 +14,7 @@
         <h1>Laura White</h1>
         <nav>
           <ul>
-            <li><a href="/">Portfolio</a></li>
+            <li><a class="portfolio" href="/">Portfolio</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
@@ -22,14 +22,70 @@
     </header>
     <main>
       <ul class="photo-grid">
-        <li><img class="grid-image" src="assets/images/photo - 1.jpeg" /></li>
-        <li><img class="grid-image" src="assets/images/photo - 2.jpeg" /></li>
-        <li><img class="grid-image" src="assets/images/photo - 3.jpeg" /></li>
-        <li><img class="grid-image" src="assets/images/photo - 4.jpeg" /></li>
-        <li><img class="grid-image" src="assets/images/photo - 5.jpeg" /></li>
-        <li><img class="grid-image" src="assets/images/photo - 6.jpeg" /></li>
-        <li><img class="grid-image" src="assets/images/photo - 7.jpeg" /></li>
-        <li><img class="grid-image" src="assets/images/photo - 8.jpeg" /></li>
+        <li>
+          <button popovertarget="1" popovertargetaction="toggle">
+            <img class="grid-image" src="assets/images/photo - 1.jpeg" />
+          </button>
+          <div popover class="popover" id="1">
+            <img class="grid-image" src="assets/images/photo - 1.jpeg" />
+          </div>
+        </li>
+        <li>
+          <button popovertarget="2" popovertargetaction="toggle">
+            <img class="grid-image" src="assets/images/photo - 2.jpeg" />
+          </button>
+          <div popover id="2">
+            <img class="grid-image" src="assets/images/photo - 2.jpeg" />
+          </div>
+        </li>
+        <li>
+          <button popovertarget="3" popovertargetaction="toggle">
+            <img class="grid-image" src="assets/images/photo - 3.jpeg" />
+          </button>
+          <div popover id="3">
+            <img class="grid-image" src="assets/images/photo - 3.jpeg" />
+          </div>
+        </li>
+        <li>
+          <button popovertarget="4" popovertargetaction="toggle">
+            <img class="grid-image" src="assets/images/photo - 4.jpeg" />
+          </button>
+          <div popover id="4">
+            <img class="grid-image" src="assets/images/photo - 4.jpeg" />
+          </div>
+        </li>
+        <li>
+          <button popovertarget="5" popovertargetaction="toggle">
+            <img class="grid-image" src="assets/images/photo - 5.jpeg" />
+          </button>
+          <div popover id="5">
+            <img class="grid-image" src="assets/images/photo - 5.jpeg" />
+          </div>
+        </li>
+        <li>
+          <button popovertarget="6" popovertargetaction="toggle">
+            <img class="grid-image" src="assets/images/photo - 6.jpeg" />
+          </button>
+          <div popover id="6">
+            <img class="grid-image" src="assets/images/photo - 6.jpeg" />
+          </div>
+        </li>
+        <li>
+          <button popovertarget="7" popovertargetaction="toggle">
+            <img class="grid-image" src="assets/images/photo - 7.jpeg" />
+          </button>
+          <div popover id="7">
+            <img class="grid-image" src="assets/images/photo - 7.jpeg" />
+          </div>
+        </li>
+        <li>
+          <button popovertarget="8" popovertargetaction="toggle">
+            <img class="grid-image" src="assets/images/photo - 8.jpeg" />
+          </button>
+          <div popover id="8">
+            <img class="grid-image" src="assets/images/photo - 8.jpeg" />
+          </div>
+        </li>
       </ul>
     </main>
     <footer>© 2026 Laura White, All Rights Reserved</footer>

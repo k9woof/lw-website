@@ -3,6 +3,7 @@ header {
   z-index: 999;
   top: 0;
   background-color: #fff;
+  user-select: none;
 }
 
 .navbar {
@@ -27,6 +28,11 @@ header nav ul {
   gap: 2rem;
 }
 
+.portfolio,
+.contact {
+  font-weight: 600;
+}
+
 header nav ul li {
   font-size: 2rem;
 }
@@ -38,4 +44,10 @@ header nav ul li a {
 
 header nav ul li a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 758px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
 }

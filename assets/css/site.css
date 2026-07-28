@@ -32,6 +32,7 @@
 html {
   height: 100%;
   background-color: #fff;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,8 +63,43 @@ main {
     display: block;
     height: 100%;
     width: 100%;
+    animation: fade-in 0.5s;
   }
   li {
     margin-bottom: var(--frame, 0.5rem);
+  }
+}
+
+button {
+  border: none;
+  background-color: none;
+  padding: 0;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+:popover-open {
+  padding: 0;
+  border: 2px solid #2b2320;
+  animation: fade-in 0.5s;
+  .grid-image {
+    height: auto;
+    width: auto;
+  }
+}
+
+:popover-open::backdrop {
+  backdrop-filter: blur(10px);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

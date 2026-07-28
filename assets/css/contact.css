@@ -1,0 +1,22 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.container img {
+  width: 400px;
+  border: 2px solid #2b2320;
+}
+
+@media (max-width: 758px) {
+  .container {
+    padding: 1rem;
+    gap: 2rem;
+    img {
+      width: 330px;
+    }
+  }
+}
