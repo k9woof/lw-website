@@ -11,6 +11,15 @@
   border: 2px solid #2b2320;
 }
 
+.container a {
+  color: #2b2320;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 758px) {
   .container {
     padding: 1rem;
