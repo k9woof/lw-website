@@ -81,18 +81,39 @@ button:hover {
   cursor: pointer;
 }
 
-:popover-open {
-  padding: 0;
+:modal {
+  padding: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 5rem;
   border: 2px solid #2b2320;
   animation: fade-in 0.5s;
-  .grid-image {
-    height: auto;
-    width: auto;
-  }
+  user-select: none;
 }
 
-:popover-open::backdrop {
-  backdrop-filter: blur(10px);
+dialog p {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+::backdrop {
+  backdrop-filter: blur(8px);
+}
+
+.dialog-close {
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  background: none;
+  color: #2b2320;
+}
+
+.dialog-close:hover {
+  font-weight: 600;
 }
 
 @keyframes fade-in {
