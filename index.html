@@ -13,10 +13,20 @@
     <header>
       <div class="navbar">
         <h1>Laura White</h1>
-        <nav>
+        <a
+          class="toggle-button"
+          role="button"
+          aria-label="Navigation dropdown menu toggle button"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <nav class="nav-bar">
+          <hr class="navbar-divider" />
           <ul>
-            <li><a class="portfolio" href="/">Portfolio</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a id="portfolio" class="portfolio" href="/">Portfolio</a></li>
+            <li><a class="contact" href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -310,5 +320,6 @@
       </ul>
     </main>
     <footer>© 2026 Laura White, All Rights Reserved</footer>
+    <script src="assets/js/nav-bar.js"></script>
   </body>
 </html>

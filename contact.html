@@ -13,10 +13,19 @@
     <header>
       <div class="navbar">
         <h1>Laura White</h1>
-        <nav>
+        <a
+          class="toggle-button"
+          role="button"
+          aria-label="Navigation dropdown menu toggle button"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <nav class="nav-bar">
           <ul>
-            <li><a href="/">Portfolio</a></li>
-            <li><a class="contact" href="/contact">Contact</a></li>
+            <li><a class="portfolio" href="/">Portfolio</a></li>
+            <li><a id="contact" class="contact" href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -24,7 +33,10 @@
     <main>
       <div class="container">
         <div class="photo">
-          <img src="assets/images/photo - 1.jpg" />
+          <img
+            src="assets/images/photo - 1.jpg"
+            alt="Swans at Linlithgow loch"
+          />
           <p>Swans at Linlithgow Loch</p>
         </div>
         <div class="contact-info">
@@ -48,5 +60,6 @@
       </div>
     </main>
     <footer>© 2026 Laura White, All Rights Reserved</footer>
+    <script src="assets/js/nav-bar.js"></script>
   </body>
 </html>

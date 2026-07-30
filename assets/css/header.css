@@ -22,14 +22,50 @@ header h1 {
   font-size: 4.5rem;
 }
 
+.toggle-button {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  z-index: 20;
+}
+
+.toggle-button .bar {
+  height: 0.25rem;
+  width: 100%;
+  background-color: #2b2320;
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.toggle-button.active .bar:nth-child(1) {
+  transform: translateY(18px) rotate(45deg);
+}
+
+.toggle-button.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-button.active .bar:nth-child(3) {
+  transform: translateY(-18px) rotate(-45deg);
+}
+
 header nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
-.portfolio,
-.contact {
+#portfolio,
+#contact {
   font-weight: 600;
 }
 
@@ -46,8 +82,42 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+.navbar-divider {
+  display: none;
+}
+
 @media (max-width: 758px) {
-  .navbar {
-    flex-wrap: wrap;
+  .nav-bar {
+    position: absolute;
+    margin: 0 auto;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: #fff;
+    z-index: 15;
+    height: auto;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .nav-bar ul {
+    flex-direction: column;
+    padding: 0.25rem;
+  }
+
+  .nav-bar ul li {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0.25rem;
+  }
+
+  .nav-bar.active {
+    display: block;
+  }
+
+  .navbar-divider {
+    max-width: 60vw;
+    display: flex;
   }
 }

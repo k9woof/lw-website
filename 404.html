@@ -13,32 +13,39 @@
     <header>
       <div class="navbar">
         <h1>Laura White</h1>
-        <nav>
+        <a
+          class="toggle-button"
+          role="button"
+          aria-label="Navigation dropdown menu toggle button"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <nav class="nav-bar">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a class="portfolio" href="/">Portfolio</a></li>
+            <li><a class="contact" href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <div class="container">
-        <img src="assets/images/photo - 1.jpeg" />
+        <div class="photo">
+          <img src="assets/images/photo - 7.jpg" alt="Confused crow" />
+          <p>Confused crow</p>
+        </div>
         <div class="contact-info">
-          <p>I am a photographer based in Scotland.</p>
-          <p>Contact me via:</p>
-          <ul>
-            <li>
-              Email:
-              <a href="mailto:hello@laurawhite.photography"
-                >hello<wbr />@laurawhite.photography</a
-              >
-            </li>
-            <li>Instagram: <a href="https://instagram.com">@laurawhite</a></li>
-          </ul>
+          <h1>Error 404: page not found</h1>
+          <p>
+            Please check the inputted URL for errors or head back
+            <a href="/">home</a>.
+          </p>
         </div>
       </div>
     </main>
     <footer>© 2026 Laura White, All Rights Reserved</footer>
+    <script src="assets/js/nav-bar.js"></script>
   </body>
 </html>

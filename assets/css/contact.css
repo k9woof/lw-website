@@ -1,13 +1,17 @@
 .container {
   padding: 2rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5rem;
+  gap: 4rem;
   justify-content: space-between;
 }
 
 .container img {
   max-width: 100%;
+  animation: fade-in 0.5s;
+}
+
+.container h1 {
+  margin: 0;
 }
 
 .photo p {
@@ -27,6 +31,7 @@
   .container {
     padding: 1rem;
     gap: 2rem;
+    flex-wrap: wrap;
     img {
       margin: 0 auto;
       max-width: 100%;
