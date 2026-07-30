@@ -7,8 +7,11 @@
 }
 
 .container img {
-  width: 400px;
-  border: 2px solid #2b2320;
+  max-width: 100%;
+}
+
+.photo p {
+  text-align: center;
 }
 
 .container a {
@@ -25,7 +28,8 @@
     padding: 1rem;
     gap: 2rem;
     img {
-      width: 330px;
+      margin: 0 auto;
+      max-width: 100%;
     }
   }
 }

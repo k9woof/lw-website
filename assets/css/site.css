@@ -90,6 +90,10 @@ button:hover {
   user-select: none;
 }
 
+dialog img {
+  max-height: 70vh;
+}
+
 dialog p {
   text-align: center;
   padding: 0.5rem;
@@ -122,5 +126,16 @@ dialog p {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-grid {
+    --frame: 1rem;
+    columns: 1;
+  }
+
+  :modal {
+    display: none;
   }
 }
