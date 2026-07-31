@@ -7,11 +7,13 @@
 
 .container img {
   max-width: 100%;
+  min-width: 50%;
   animation: fade-in 0.5s;
 }
 
 .container h1 {
   margin: 0;
+  font-weight: 600;
 }
 
 .photo p {
