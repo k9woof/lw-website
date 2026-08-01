@@ -6,8 +6,7 @@
 }
 
 .container img {
-  max-width: 100%;
-  min-width: 50%;
+  min-width: 65%;
   animation: fade-in 0.5s;
 }
 
