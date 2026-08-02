@@ -1,0 +1,141 @@
+/* lora-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lora-v37-latin-regular.woff2") format("woff2");
+}
+
+/* lora-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/lora-v37-latin-600.woff2") format("woff2");
+}
+
+/* lora-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lora-v37-latin-700.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lora";
+  margin: 0;
+  font-size: 1.25rem;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #2b2320;
+}
+
+main {
+  flex: 1 0 auto;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+.photo-grid {
+  --frame: 2rem;
+  columns: 3;
+  margin-inline: auto;
+  padding: var(--frame, 0.5rem);
+  padding-top: 0;
+  column-gap: var(--frame, 0.5rem);
+  list-style: none;
+  .grid-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    animation: fade-in 0.5s;
+  }
+  li {
+    margin-bottom: var(--frame, 0.5rem);
+  }
+}
+
+button {
+  border: none;
+  background-color: none;
+  padding: 0;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+:modal {
+  padding: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 5rem;
+  border: 2px solid #2b2320;
+  animation: fade-in 0.5s;
+  user-select: none;
+}
+
+dialog img {
+  max-height: 70vh;
+}
+
+dialog p {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+::backdrop {
+  backdrop-filter: blur(8px);
+}
+
+.dialog-close {
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  background: none;
+  color: #2b2320;
+}
+
+.dialog-close:hover {
+  font-weight: 600;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-grid {
+    --frame: 1rem;
+    columns: 1;
+  }
+
+  :modal {
+    display: none;
+  }
+}
