@@ -1,13 +1,18 @@
 .container {
+  margin: 0 auto;
+  max-width: 1800px;
   padding: 2rem;
   display: flex;
-  gap: 4rem;
-  justify-content: space-between;
+  gap: 2rem;
 }
 
-.container img {
-  min-width: 65%;
-  animation: fade-in 0.5s;
+.hero-image {
+  flex: 70%;
+}
+
+.hero-image img {
+  width: 100%;
+  border: 2px solid #2b2320;
 }
 
 .container h1 {
@@ -15,27 +20,33 @@
   font-weight: 600;
 }
 
-.photo p {
+.hero-image p {
   text-align: center;
 }
 
-.container a {
+.contact-info {
+  flex: 30%;
+}
+
+.contact-info a {
+  text-decoration: underline;
   color: #2b2320;
+}
+
+.contact-info a:hover {
   text-decoration: none;
 }
 
-.container a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 758px) {
+@media (max-width: 850px) {
   .container {
-    padding: 1rem;
-    gap: 2rem;
-    flex-wrap: wrap;
+    padding: 1.5rem;
+    flex-wrap: wrap-reverse;
     img {
       margin: 0 auto;
       max-width: 100%;
+    }
+    h1 {
+      font-size: 1.75rem;
     }
   }
 }
