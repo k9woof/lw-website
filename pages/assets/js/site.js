@@ -15,11 +15,13 @@ const closeDialog = (dialog) => {
 
 // add event listener to each image
 var x = 1;
-while (x < imageButtons.length + 1) {
-  const dialog = document.getElementById(String(x));
-  const closeButton = dialog.querySelector(".dialog-close");
-  const popped = imageButtons[x - 1];
-  popped.addEventListener("click", () => openDialog(dialog));
-  closeButton.addEventListener("click", () => closeDialog(dialog));
-  x++;
+if (screen.width > 768) {
+  while (x < imageButtons.length + 1) {
+    const dialog = document.getElementById(String(x));
+    const closeButton = dialog.querySelector(".dialog-close");
+    const popped = imageButtons[x - 1];
+    popped.addEventListener("click", () => openDialog(dialog));
+    closeButton.addEventListener("click", () => closeDialog(dialog));
+    x++;
+  }
 }
